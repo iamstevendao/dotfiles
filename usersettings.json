@@ -1,0 +1,33 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "files.autoSave": "afterDelay",
+  "window.newWindowDimensions": "inherit",
+  // editor settings
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.renderIndentGuides": false,
+  "editor.renderLineHighlight": "all",
+  "editor.scrollBeyondLastLine": false,
+  "editor.fontSize": 13,
+  "editor.dragAndDrop": false,
+  // disable minimap
+  "editor.minimap.enabled": false,
+  "editor.minimap.renderCharacters": false,
+  // workbench settings
+  "workbench.activityBar.visible": false,
+  "workbench.statusBar.visible": false,
+  // languages specific
+  "html.format.unformatted": "span, a",
+  "html.format.wrapLineLength": 0,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  // ruby linter
+  "ruby.lint": {
+    "reek": true,
+    "rubocop": true,
+    "ruby": true, //Runs ruby -wc
+    "fasterer": true,
+    "debride": true,
+    "rcodetools": true
+  }
+}

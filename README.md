@@ -1,2 +1,1 @@
-# UserSetting.vscode
-My Visual Studio Code Settings
+# My Visual Studio Code Setting
