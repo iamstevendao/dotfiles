@@ -1,7 +1,12 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "files.autoSave": "afterDelay",
   "window.newWindowDimensions": "inherit",
+  // files settings
+  "files.autoSave": "afterDelay",
+  "files.exclude": {
+    "bin/": true,
+    "node_modules/": true
+  },
   // editor settings
   "editor.wordWrap": "on",
   "editor.formatOnSave": true,
