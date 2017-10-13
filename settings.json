@@ -16,6 +16,7 @@
   "editor.scrollBeyondLastLine": false,
   "editor.fontSize": 13,
   "editor.dragAndDrop": false,
+  "editor.codeLens": false,
   // disable minimap
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": false,
