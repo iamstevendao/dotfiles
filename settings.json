@@ -9,14 +9,16 @@
   },
   // editor settings
   "editor.wordWrap": "on",
-  "editor.formatOnSave": true,
-  "editor.tabSize": 2,
   "editor.renderIndentGuides": false,
   "editor.renderLineHighlight": "all",
   "editor.scrollBeyondLastLine": false,
   "editor.fontSize": 13,
   "editor.dragAndDrop": false,
   "editor.codeLens": false,
+  // formatting
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
   // disable minimap
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": false,
@@ -35,5 +37,6 @@
     "fasterer": true,
     "debride": true,
     "rcodetools": true
-  }
+  },
+  "window.zoomLevel": 0
 }
