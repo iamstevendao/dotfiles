@@ -1,6 +1,9 @@
 // Place your settings in this file to overwrite the default settings
 {
+  // window settings
   "window.newWindowDimensions": "inherit",
+  "window.zoomLevel": 0,
+  "window.title": "${activeEditorMedium}${separator}${rootName}",
   // files settings
   "files.autoSave": "afterDelay",
   "files.exclude": {
@@ -22,21 +25,15 @@
   // disable minimap
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": false,
+  // search settings
+  "search.quickOpen.includeSymbols": true,
   // workbench settings
   "workbench.activityBar.visible": false,
   "workbench.statusBar.visible": false,
   // languages specific
   "html.format.unformatted": "span, a",
   "html.format.wrapLineLength": 0,
-  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-  // ruby linter
-  "ruby.lint": {
-    "reek": true,
-    "rubocop": true,
-    "ruby": true, //Runs ruby -wc
-    "fasterer": true,
-    "debride": true,
-    "rcodetools": true
-  },
-  "window.zoomLevel": 0
+  "html.format.indentHandlebars": true,
+  "html.format.maxPreserveNewLines": 0,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true
 }
