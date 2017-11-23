@@ -11,11 +11,13 @@
     "node_modules/": true
   },
   // editor settings
+  "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": false,
   "editor.wordWrap": "on",
   "editor.renderIndentGuides": false,
   "editor.renderLineHighlight": "all",
   "editor.scrollBeyondLastLine": false,
-  "editor.fontSize": 13,
+  "editor.fontSize": 14,
   "editor.dragAndDrop": false,
   "editor.codeLens": false,
   // formatting
@@ -30,10 +32,16 @@
   // workbench settings
   "workbench.activityBar.visible": false,
   "workbench.statusBar.visible": false,
+  "workbench.startupEditor": "none",
   // languages specific
   "html.format.unformatted": "span, a",
   "html.format.wrapLineLength": 0,
   "html.format.indentHandlebars": true,
   "html.format.maxPreserveNewLines": 0,
-  "javascript.format.insertSpaceBeforeFunctionParenthesis": true
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  // terminal settings
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.enableBold": false,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true
 }
