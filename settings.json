@@ -6,15 +6,15 @@
   "window.title": "${activeEditorMedium}${separator}${rootName}",
   // files settings
   "files.autoSave": "afterDelay",
+  "files.insertFinalNewline": true,
   "files.exclude": {
     "bin/": true,
     "node_modules/": true
   },
   // editor settings
   "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontLigatures": false,
+  "editor.fontLigatures": true,
   "editor.wordWrap": "on",
-  "editor.renderIndentGuides": false,
   "editor.renderLineHighlight": "all",
   "editor.scrollBeyondLastLine": false,
   "editor.fontSize": 14,
@@ -28,7 +28,11 @@
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": false,
   // search settings
-  "search.quickOpen.includeSymbols": true,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    ".meteor/local": true
+  },
   // workbench settings
   "workbench.activityBar.visible": false,
   "workbench.statusBar.visible": false,
@@ -38,10 +42,19 @@
   "html.format.wrapLineLength": 0,
   "html.format.indentHandlebars": true,
   "html.format.maxPreserveNewLines": 0,
+  "html.format.wrapAttributes": "force-aligned",
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   // terminal settings
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.enableBold": false,
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.cursorBlinking": true
+  "terminal.integrated.cursorBlinking": true,
+  // vetur settings
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_attributes": "force-aligned"
+    }
+  },
+  "vetur.format.defaultFormatter.js": "none"
 }
