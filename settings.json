@@ -55,5 +55,5 @@
       "wrap_attributes": "force-aligned"
     }
   },
-  "vetur.format.defaultFormatter.js": "none"
+  "vetur.format.defaultFormatter.js": "vscode-typescript"
 }
