@@ -1,0 +1,26 @@
+{
+  "print to console": {
+    "prefix": "slog",
+    "body": [
+      "console.log('----- ${1}:', ${1});",
+      "$2"
+    ],
+    "description": "log output to console"
+  },
+  "warn to console": {
+    "prefix": "swarn",
+    "body": [
+      "console.warn('***** ${1}');",
+      "$2"
+    ],
+    "description": "log warning to console"
+  },
+  "import statement": {
+    "prefix": "simp",
+    "body": [
+      "import $2 from '$1';",
+      "$3"
+    ],
+    "description": "import from"
+  }
+}
