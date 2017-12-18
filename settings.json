@@ -5,11 +5,12 @@
   "window.zoomLevel": 0,
   "window.title": "${activeEditorMedium}${separator}${rootName}",
   // files settings
-  "files.autoSave": "afterDelay",
+  "files.autoSave": "onFocusChange",
   "files.insertFinalNewline": true,
   "files.exclude": {
     "bin/": true,
-    "node_modules/": true
+    "node_modules/": true,
+    ".meteor/local": true,
   },
   // editor settings
   "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
@@ -55,5 +56,13 @@
       "wrap_attributes": "force-aligned"
     }
   },
-  "vetur.format.defaultFormatter.js": "vscode-typescript"
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  // eslint settings
+  "eslint.autoFixOnSave": true,
+  "eslint.options": {
+    "extensions": [
+      ".js",
+      ".vue"
+    ]
+  }
 }
