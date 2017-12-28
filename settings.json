@@ -61,8 +61,28 @@
   "eslint.autoFixOnSave": true,
   "eslint.options": {
     "extensions": [
+      ".html",
       ".js",
-      ".vue"
+      ".vue",
+      ".jsx"
     ]
-  }
+  },
+  "eslint.validate": [
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    }
+  ]
 }
