@@ -35,7 +35,8 @@
     "prefix": "sexp",
     "body": [
       "export default {",
-      "\t$1",
+      "\tname: '$1'",
+      "\t$2",
       "};"
     ],
     "description": "export default"
@@ -57,7 +58,7 @@
     "body": [
       "computed: {",
       "\t${1:name}() {",
-      "\t\treturn this.${2:data} ${0}",
+      "\t\treturn ${2:data};",
       "\t}",
       "},"
     ],
