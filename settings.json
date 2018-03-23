@@ -34,6 +34,7 @@
     "**/bower_components": true,
     ".meteor/local": true
   },
+  "search.smartCase": true,
   // workbench settings
   "workbench.activityBar.visible": false,
   "workbench.statusBar.visible": false,
@@ -46,7 +47,6 @@
   "html.format.wrapAttributes": "force-aligned",
   // terminal settings
   "terminal.integrated.fontSize": 13,
-  "terminal.integrated.enableBold": false,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
   // vetur settings
@@ -84,5 +84,6 @@
       "language": "javascriptreact",
       "autoFix": true
     }
-  ]
+  ],
+  "workbench.iconTheme": "vscode-great-icons"
 }
