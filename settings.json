@@ -85,5 +85,9 @@
       "autoFix": true
     }
   ],
-  "workbench.iconTheme": "vscode-great-icons"
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.presets.hideExplorerArrows": true,
+  "path-intellisense.mappings": {
+    "/": "${workspaceRoot}"
+  }
 }
