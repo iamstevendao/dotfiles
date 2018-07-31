@@ -12,6 +12,7 @@
     "node_modules/": true,
     ".meteor/local": true,
   },
+  "files.defaultLanguage": "markdown",
   // Editor settings
   "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
@@ -21,6 +22,9 @@
   "editor.fontSize": 14,
   "editor.dragAndDrop": false,
   "editor.codeLens": false,
+  "editor.rulers": [
+    100
+  ],
   // Formatting
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
@@ -90,5 +94,35 @@
   "vsicons.presets.hideExplorerArrows": true,
   "path-intellisense.mappings": {
     "/": "${workspaceRoot}"
-  }
+  },
+  "cSpell.language": "en,en-GB",
+  "cSpell.enabledLanguageIds": [
+    "asciidoc",
+    "c",
+    "cpp",
+    "csharp",
+    "css",
+    "go",
+    "handlebars",
+    "html",
+    "jade",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "latex",
+    "less",
+    "markdown",
+    "php",
+    "plaintext",
+    "pub",
+    "python",
+    "restructuredtext",
+    "rust",
+    "scss",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "yml"
+  ]
 }
