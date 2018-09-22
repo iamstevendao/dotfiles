@@ -29,6 +29,7 @@
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
+  "breadcrumbs.enabled": true,
   // Disable minimap
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": false,
@@ -90,6 +91,8 @@
       "autoFix": true
     }
   ],
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   // Other extensions settings
   "vsicons.presets.hideExplorerArrows": true,
   "path-intellisense.mappings": {
