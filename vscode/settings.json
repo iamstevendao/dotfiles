@@ -34,6 +34,8 @@
   // Disable minimap
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": false,
+  "editor.renderWhitespace": "selection",
+  "editor.suggestSelection": "first",
   // Search settings
   "search.exclude": {
     "**/node_modules": true,
@@ -135,5 +137,6 @@
   "vetur.format.defaultFormatter.ts": "prettier",
   "vetur.format.defaultFormatter.js": "vscode-typescript",
   "vetur.format.defaultFormatter.html": "prettier",
-  "vsicons.presets.hideExplorerArrows": true
+  "vsicons.presets.hideExplorerArrows": true,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }
