@@ -62,7 +62,9 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
   // Eslint settings
-  "eslint.autoFixOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "eslint.options": {
     "extensions": [
       ".js",
@@ -71,22 +73,10 @@
     ]
   },
   "eslint.validate": [
-    {
-      "language": "html",
-      "autoFix": true
-    },
-    {
-      "language": "vue",
-      "autoFix": true
-    },
-    {
-      "language": "javascript",
-      "autoFix": true
-    },
-    {
-      "language": "javascriptreact",
-      "autoFix": true
-    }
+    "html",
+    "vue",
+    "javascript",
+    "javascriptreact"
   ],
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -132,11 +122,10 @@
       "tabWidth": 2,
       "printWidth": 100,
       "eslintIntegration": true
-    },
+    }
   },
   "vetur.format.defaultFormatter.ts": "prettier",
   "vetur.format.defaultFormatter.js": "vscode-typescript",
   "vetur.format.defaultFormatter.html": "prettier",
-  "vsicons.presets.hideExplorerArrows": true,
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+  "vsicons.presets.hideExplorerArrows": true
 }
