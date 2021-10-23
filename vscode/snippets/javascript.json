@@ -2,7 +2,7 @@
   "print to console": {
     "prefix": "slog",
     "body": [
-      "console.log('----- ${1:variable}:', ${1:variable});",
+      "console.log('---> ${1:variable}:', ${1:variable});",
       "${0}"
     ],
     "description": "log output to console"
@@ -10,7 +10,7 @@
   "info to console": {
     "prefix": "sinfo",
     "body": [
-      "console.info('----- ${1:content}:');",
+      "console.info('---> ${1:content}:');",
       "${0}"
     ],
     "description": "log info to console"
@@ -22,6 +22,21 @@
       "${0}"
     ],
     "description": "log warning to console"
+  },
+  "error to console": {
+    "prefix": "serr",
+    "body": [
+      "console.error('!!!! ${1:variable}:', ${1:variable});",
+      "${0}"
+    ],
+    "description": "log error to console"
+  },
+  "ring a bell": {
+    "prefix": "sring",
+    "body": [
+      "console.log('ring a bell');",
+    ],
+    "description": "ring a bell"
   },
   "import statement": {
     "prefix": "simp",
