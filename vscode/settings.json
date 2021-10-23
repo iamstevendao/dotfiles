@@ -2,7 +2,6 @@
 {
   // Window settings
   "window.newWindowDimensions": "inherit",
-  "window.zoomLevel": 0,
   "window.title": "${rootName}${separator}${activeEditorMedium}",
   // Files settings
   "files.autoSave": "onFocusChange",
@@ -12,6 +11,14 @@
     "node_modules/": true,
     "**/*/node_modules/": true,
     ".meteor/local": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/env/**": true,
+    "**/venv/**": true,
+    "env-*": true
   },
   "files.defaultLanguage": "markdown",
   // Editor settings
@@ -31,11 +38,14 @@
   "editor.formatOnSave": true,
   "editor.suggest.localityBonus": true,
   "breadcrumbs.enabled": true,
+  "diffEditor.renderSideBySide": true,
+  "editor.suggest.preview": true,
   // Disable minimap
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": false,
   "editor.renderWhitespace": "selection",
   "editor.suggestSelection": "first",
+  "editor.bracketPairColorization.enabled": true,
   // Search settings
   "search.exclude": {
     "**/node_modules": true,
@@ -43,13 +53,13 @@
     ".meteor/local": true
   },
   "search.smartCase": true,
-  // Workbench settings
   "workbench.activityBar.visible": false,
   "workbench.statusBar.visible": false,
   "workbench.startupEditor": "none",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.sideBar.location": "left",
   "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Dracula",
   // HTML format settings
   "html.format.unformatted": "span, a",
   "html.format.wrapLineLength": 0,
@@ -69,14 +79,17 @@
     "extensions": [
       ".js",
       ".vue",
-      ".jsx"
+      ".jsx",
+      ".ts"
     ]
   },
   "eslint.validate": [
     "html",
     "vue",
     "javascript",
-    "javascriptreact"
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
   ],
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -124,8 +137,57 @@
       "eslintIntegration": true
     }
   },
-  "vetur.format.defaultFormatter.ts": "prettier",
+  "vetur.format.defaultFormatter.ts": "vscode-typescript",
   "vetur.format.defaultFormatter.js": "vscode-typescript",
   "vetur.format.defaultFormatter.html": "prettier",
-  "vsicons.presets.hideExplorerArrows": true
+  "vetur.languageFeatures.codeActions": false,
+  "vetur.validation.interpolation": false,
+  "vetur.validation.template": false,
+  "vsicons.presets.hideExplorerArrows": true,
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "prettier.printWidth": 100,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "cSpell.userWords": [
+    "cricos",
+    "topmenu"
+  ],
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true
 }
