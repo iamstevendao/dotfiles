@@ -40,6 +40,8 @@
   "breadcrumbs.enabled": true,
   "diffEditor.renderSideBySide": true,
   "editor.suggest.preview": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.accessibilitySupport": "off",
   // Disable minimap
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": false,
@@ -176,6 +178,7 @@
   "security.workspace.trust.untrustedFiles": "open",
   "cSpell.userWords": [
     "cricos",
+    "endregion",
     "topmenu"
   ],
   "todo-tree.general.tags": [
@@ -187,7 +190,5 @@
     "[ ]",
     "[x]"
   ],
-  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
-  "typescript.inlayHints.functionLikeReturnTypes.enabled": true
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)"
 }

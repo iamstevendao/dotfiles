@@ -34,7 +34,7 @@
   "ring a bell": {
     "prefix": "sring",
     "body": [
-      "console.log('ring a bell');",
+      "console.log('ring a bell');"
     ],
     "description": "ring a bell"
   },
