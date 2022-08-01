@@ -1,21 +1,23 @@
-ZSH_THEME="robbyrussell"
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 
-# pure
-autoload -U promptinit; promptinit
-prompt pure
-PURE_CMD_MAX_EXEC_TIME=1
+export PATH=/opt/homebrew/bin:$PATH
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# Enable mongod.
+export PATH="$PATH:/usr/local/opt/mongodb-community/bin";
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/iamstevendao/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/iamstevendao/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/iamstevendao/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/iamstevendao/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="/usr/local/sbin:$PATH"
 
-# Iterm2 integration.
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-# Enable mongod.
-export PATH="$PATH:/usr/local/opt/mongodb-community@4.4/bin";
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
