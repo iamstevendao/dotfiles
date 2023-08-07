@@ -354,6 +354,12 @@
       "Action" : 10,
       "Text" : "[23;2~"
     },
+    "0x7b-0x120000-0x21" : {
+      "Version" : 1,
+      "Action" : 53,
+      "Text" : "",
+      "Label" : ""
+    },
     "0x2e-0x200000" : {
       "Action" : 12,
       "Text" : "."
