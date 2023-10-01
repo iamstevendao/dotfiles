@@ -1,0 +1,12 @@
+version: '0'
+services:
+  mongo-27017:
+    image: mongo:latest
+    ports:
+      - '27017:27017'
+    command: mongod
+  mongo-3031:
+    image: mongo:latest
+    ports:
+      - '3031:27017'
+    command: mongod
