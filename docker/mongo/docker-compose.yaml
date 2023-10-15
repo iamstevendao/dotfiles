@@ -1,11 +1,26 @@
-version: '0'
 services:
+  mongo-rs:
+    container_name: mongo-bitnami
+    # image: 'bitnami/mongodb:6.0'
+    # temporary workaround for bitnami images not working on arm64 (m1/m2 macs)
+    image: 'ghcr.io/zcube/bitnami-compat/mongodb:6.0'
+    ports:
+      - '27027:27017'
+    environment:
+      MONGODB_REPLICA_SET_KEY: wololo
+      MONGODB_REPLICA_SET_MODE: primary
+      MONGODB_REPLICA_SET_NAME: rs0
+      MONGODB_ADVERTISED_HOSTNAME: localhost
+      MONGODB_ROOT_PASSWORD: password
+      ALLOW_EMPTY_PASSWORD: yes
   mongo-27017:
+    container_name: mongo-27017
     image: mongo:latest
     ports:
       - '27017:27017'
     command: mongod
   mongo-3031:
+    container_name: mongo-3031
     image: mongo:latest
     ports:
       - '3031:27017'
