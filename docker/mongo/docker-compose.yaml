@@ -1,6 +1,6 @@
 services:
   mongo-rs:
-    container_name: mongo-bitnami
+    container_name: mongo-rs
     # image: 'bitnami/mongodb:6.0'
     # temporary workaround for bitnami images not working on arm64 (m1/m2 macs)
     image: 'ghcr.io/zcube/bitnami-compat/mongodb:6.0'
